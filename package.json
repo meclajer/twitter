@@ -1,0 +1,27 @@
+{
+  "name": "twitter",
+  "version": "0.0.1",
+  "description": "Practica de modelado en JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meclajer/twitter.git"
+  },
+  "keywords": [
+    "model",
+    "JS",
+    "node"
+  ],
+  "author": "meclajer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meclajer/twitter/issues"
+  },
+  "homepage": "https://github.com/meclajer/twitter#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
