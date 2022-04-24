@@ -16,4 +16,16 @@ describe('UT of class User', () => {
 
     });
 
+    test('getters', () => {
+
+        // objt
+        const myUser = new User(1, "carlogilmar", "carlo", "Bio")
+
+        expect(myUser.getUserName).toBe("carlogilmar")
+        expect(myUser.getBio).toBe("Bio")
+        expect(myUser.getDateCreated).not.toBeUndefined()
+        expect(myUser.getLastUpdated).not.toBeUndefined()
+
+    });
+
 });
