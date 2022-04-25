@@ -15,7 +15,7 @@ describe('Test for UserView', () => {
     test('Return an error object when try to create a new user with a pyload with invalid properties', () => {
 
         // objects
-        const payload = { username: null, name: 12, id: "id" }
+        const payload = { userName: null, name: 12, id: "id" }
         const result = UserView.createUser(payload)
 
         // tests
