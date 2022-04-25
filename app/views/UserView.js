@@ -12,9 +12,6 @@ class UserView {
             const user = UserService.create(payload.id, payload.userName, payload.name)
             return user
         }
-
-
-
     }
 
 }
