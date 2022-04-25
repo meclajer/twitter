@@ -1,6 +1,6 @@
 class User {
 
-    // const myUser = new User(1, "carlogilmar", "carlo", "Bio", "dateCreated", "lastUpdate")
+    // constructor
     constructor(id, userName, name, bio, dateCreated, lastUpdate) {
         this.id = id
         this.userName = userName
@@ -10,29 +10,15 @@ class User {
         this.lastUpdate = new Date
     }
 
-    getUserName() {
-        return this.userName
-    }
+    // geters
+    getUserName() { return this.userName }
+    getBio() { return this.bio }
+    getDateCreated() { return this.dateCreated }
+    getLastUpdated() { return this.lastUpdate }
 
-    getBio() {
-        return this.bio
-    }
-
-    getDateCreated() {
-        return this.dateCreated
-    }
-
-    getLastUpdated() {
-        return this.lastUpdate
-    }
-
-    setUserName(userName) {
-        this.userName = userName
-    }
-
-    setBio(bio) {
-        this.bio = bio
-    }
+    // seters
+    setUserName(userName) { this.userName = userName }
+    setBio(bio) { this.bio = bio }
 
 }
 
