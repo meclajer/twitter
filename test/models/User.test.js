@@ -33,10 +33,10 @@ describe('UT of class User', () => {
         // objt
         const myUser = new User(1, "carlogilmar", "carlo", "Bio")
 
-        myUser.setUserName = "Gilmar"
+        myUser.setUserName("Gilmar")
         expect(myUser.userName).toBe("Gilmar")
 
-        myUser.setBio = "New Bio"
+        myUser.setBio("New Bio")
         expect(myUser.bio).toBe("New Bio")
 
     });
