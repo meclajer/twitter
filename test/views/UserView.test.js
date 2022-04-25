@@ -23,4 +23,15 @@ describe('Test for UserView', () => {
 
     });
 
+    test('Return an error object when try to create a new user with a pyload with missing properties', () => {
+
+        // objt
+        const payload = { userName: "username" }
+        const result = UserView.createUser(payload)
+
+        // test
+        expect(result.error).toMatch(/necesitan tener un valor valido/)
+
+    });
+
 });
