@@ -16,7 +16,7 @@ describe('UT of class User', () => {
 
     });
 
-    test('getters', () => {
+    test('User getters test', () => {
 
         // objt
         const myUser = new User(1, "carlogilmar", "carlo", "Bio")
@@ -25,6 +25,19 @@ describe('UT of class User', () => {
         expect(myUser.getBio()).toBe("Bio")
         expect(myUser.getDateCreated()).not.toBeUndefined()
         expect(myUser.getLastUpdated()).not.toBeUndefined()
+
+    });
+
+    test('User setters test', () => {
+
+        // objt
+        const myUser = new User(1, "carlogilmar", "carlo", "Bio")
+
+        myUser.setUserName = "Gilmar"
+        expect(myUser.userName).toBe("Gilmar")
+
+        myUser.setBio = "New Bio"
+        expect(myUser.bio).toBe("New Bio")
 
     });
 
